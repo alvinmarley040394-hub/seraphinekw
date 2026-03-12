@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seraphine Scents | Luxury Fragrances</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Poppins;
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+h1,h2{
+font-family:'Playfair Display',serif;
+letter-spacing:2px;
+}
+
+header{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+color:gold;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav a:hover{
+color:gold;
+}
+
+.hero{
+height:100vh;
+background-image:url("https://scontent.fkwi6-2.fna.fbcdn.net/v/t39.30808-6/647144733_122123767641037492_8144922306097179877_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=cB71426212kQ7kNvwEm938C&_nc_oc=AdnF27bb_c7qULAhEgm2gKyGUS3MIJVTak6zjxhTFqjES6KNsAvC0nEPabmYRtHtZko&_nc_zt=23&_nc_ht=scontent.fkwi6-2.fna&_nc_gid=Rej6D3jx0zW8PMRuAeIufQ&_nc_ss=8&oh=00_AfxN8x-cpsNOC9le6ASJ-Zcjf2Ulmco3-1ZwM_RwOgc-oA&oe=69B8B565");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+color:gold;
+}
+
+.hero p{
+font-size:20px;
+max-width:700px;
+}
+
+.btn{
+margin-top:30px;
+padding:14px 40px;
+border:none;
+background:gold;
+color:black;
+font-weight:bold;
+cursor:pointer;
+border-radius:30px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+margin-top:60px;
+}
+
+.product{
+background:#111;
+padding:20px;
+border-radius:15px;
+transition:0.4s;
+cursor:pointer;
+}
+
+.product img{
+width:100%;
+border-radius:10px;
+}
+
+.product:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px gold;
+}
+
+.price{
+color:gold;
+margin-top:10px;
+font-weight:bold;
+}
+
+.about{
+background-image: linear-gradient(to right, black, grey);
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+gap:60px;
+}
+
+.about img{
+width:400px;
+border-radius:20px;
+
+}
+
+footer{
+background-image: linear-gradient(to right, grey,black);
+padding:40px;
+text-align:center;
+color:#aaa;
+}
+
+footer span{
+color:gold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Seraphine Scents</div>
+
+<nav>
+<a href="#">Home
+</a>
+<a href="#products">Fragrances</a>
+<a href="#about" class="nav-link smoothScroll">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+<section class="hero">
+
+<h1>Seraphine Scents
+
+</h1>
+
+
+
+<button class="btn" onclick="scrollToProducts()">Explore Collection</button>
+
+</section>
+
+
+<section id="products" class="section">
+
+<h2>Our Signature Collection</h2>
+
+<div class="products">
+
+<div class="product">
+<img src="https://scontent.fkwi5-2.fna.fbcdn.net/v/t39.30808-6/651009816_122123781039037492_2771519325291167638_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=102&ccb=1-7&_nc_sid=7b2446&_nc_ohc=DpNwSnQu2ZcQ7kNvwHXoUc8&_nc_oc=AdlK5A2rn2Jin_sOyViyb_5rF4ETw3UP3Ht1LcphLKws_hxDhi20MXrpbsV2lZMLG98&_nc_zt=23&_nc_ht=scontent.fkwi5-2.fna&_nc_gid=-9vq_17K57C2AJe2k3YfMw&_nc_ss=8&oh=00_Afyq-qHO41HEJ2wl-ypRfw-IuNfwPTyTgN_hzieSx9EcIg&oe=69B8D071">
+<h3>Mon Paris</h3>
+<p>Elegant romantic scent</p>
+<div class="price">$15</div>
+</div>
+
+<div class="product">
+<img src="https://scontent.fkwi6-2.fna.fbcdn.net/v/t39.30808-6/650559380_122123781363037492_6252300699507470363_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=103&ccb=1-7&_nc_sid=7b2446&_nc_ohc=xrvwJY90ttIQ7kNvwFM8pZt&_nc_oc=AdmuBV6pCgAh1CaLIXQwzWULYhVuGMx66P4WRk5sGu4Ne7wieDwJ_HXLti-3hArcLb4&_nc_zt=23&_nc_ht=scontent.fkwi6-2.fna&_nc_gid=PvGykBO2x9VrXjAjzLrJyA&_nc_ss=8&oh=00_Afyq96dj-0LCvG0P-zlYVPYS96ahAMVbMxHV5DJ3JbY2Rw&oe=69B8E803">
+<h3>Black Opium</h3>
+<p>Bold and mysterious</p>
+<div class="price">$18</div>
+</div>
+
+<div class="product">
+<img src="https://scontent.fkwi5-2.fna.fbcdn.net/v/t39.30808-6/649837468_122123780439037492_1151600597137598360_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=-C3T31LPFhAQ7kNvwHxXYhY&_nc_oc=AdnsfTMHRHB0razctsxYr4q2M_3rFpNnir83EvDnZK_HxG8dVcojYlDpB4QrOcOnVc8&_nc_zt=23&_nc_ht=scontent.fkwi5-2.fna&_nc_gid=n73IR2TJufw4Kurpyf1BOg&_nc_ss=8&oh=00_AfxccU_8qpCF27Vzftrvr7bksfqsNfARJ7ePQiNqBIlP8A&oe=69B8F267">
+<h3>Eros</h3>
+<p>Powerful masculine aroma</p>
+<div class="price">$17</div>
+</div>
+
+<div class="product">
+<img src="https://scontent.fkwi5-2.fna.fbcdn.net/v/t39.30808-6/649128724_122123781333037492_2616759481991310996_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7b2446&_nc_ohc=UqnnbmjzsYwQ7kNvwGM4L1d&_nc_oc=AdngRq3geFLaI1d_Gl2FX360738FVZKr2Y3I5XAgeMTONEqAv1ca_QE5nVH_Wt6v3eA&_nc_zt=23&_nc_ht=scontent.fkwi5-2.fna&_nc_gid=VKFtt3p_PyMY2NNT-HDAmQ&_nc_ss=8&oh=00_AfwMlPj1rnyiw7wLa-gsGwGvWUvFwEisoH_i8zpoFesZcQ&oe=69B8DDBF">
+<h3>Mallow</h3>
+<p>Sweet floral luxury</p>
+<div class="price">$14</div>
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about" class="section">
+
+<div class="about">
+
+
+<img src="">
+ 
+<div>
+
+<h2>About Seraphine Scents</h2>
+
+<p style="margin-top:20px;line-height:1.7">
+
+Seraphine Scents creates luxury handcrafted fragrances inspired by the world's most iconic perfumes.  
+Our mission is simple: bring **premium scents at affordable prices** so everyone can experience luxury every day.
+
+Each fragrance is carefully blended to deliver elegance, confidence, and unforgettable presence.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact" class="section">
+
+<h2>Contact Us</h2>
+
+<p style="margin-top:20px">
+Instagram • WhatsApp • Email
+</p>
+
+<button class="btn" on click="https://www.facebook.com/profile.php?id=61581124786835">Order Now</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 <span>Seraphine Scents</span> — Luxury Handcrafted Fragrances</p>
+
+</footer>
+
+
+<script>
+
+function scrollToProducts(){
+document.getElementById("products").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+</script>
+
+</body>
+</html>
